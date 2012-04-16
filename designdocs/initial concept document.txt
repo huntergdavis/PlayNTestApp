@@ -1,0 +1,32 @@
+This is the initial concept document.
+Copyright Hunter Davis, 2012
+All rights reserved.
+
+here's how it starts.
+
+1.  a canvas, 1024x600 or something like that
+2.  it's an html5 webgl canvas, like tuner
+3.  there are like 20 or 50 8x8 pixel opengl square color squares (like tuner)
+4.  There are songs (like midi songs) that consist of series of
+pitches, each level is a song
+5.  You have to keep your people alive, so they can fight the other
+team's little pixels
+6.  You keep your team alive by clicking on the pixels to make their
+health go up, but you can only make that happen when the unit blinks
+with a white outline box
+7.  The white outline box plays along to the beat.  Each unit plays
+whatever the next note is in that song, but it is distorted based on
+how much damage that unit has taken from the other team
+8.  The color of the pixel people is their health, it goes from green
+to red (with cracks) or from white to black (with cracks)
+9.  Other bonuses and stuff happen to the beat, but negative stuff
+happens off the beat!
+
+the colored squares can be notes, and later animated notes!
+there could be a 'spawning note', it's like a boombox that they come out of. There should be some touch minigame related to the music playback on that.  Either the volume or note speed or something should decrease when it is being destroyed.
+
+This should be a very simplified RTS that doesn't require unit placement.  So defending your castle needs to be either automatic (via AI) or carefully designed into the levels
+
+The levels should be fun and simple to design, perhaps just txt files or xml files that are really easy to make.  Room for improvement later.
+
+

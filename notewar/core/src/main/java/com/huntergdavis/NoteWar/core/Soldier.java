@@ -1,18 +1,18 @@
 /*
- * Player.java, implements Player class
+ * Soldier.java, implements Soldier class
  *  
- * Player has no knowledge of other players internally
- * Player is simple abstraction
+ * Soldier has no knowledge of other soldiers internally
+ * Soldier is simple abstraction
  * Meant to be easily contained in LL or array etc 	
  * 
  */
-public class Player {
+public class Soldier {
 	
-	// player position defaults to 0,0 
+	// soldier position defaults to 0,0 
 	private int xPosition;
 	private int yPosition;
 	
-	// player health defaults to 100
+	// soldier health defaults to 100
 	private int healthTotal;
 	private int healthCurrent;
 	
@@ -23,21 +23,21 @@ public class Player {
 	private int totalNumberOfAnimationFrames;
 	
 	/*
-	 * Player initialization
+	 * Soldier initialization
 	 * set everything to defaults
 	 * using defaults() function
 	 */
-	Player() {
+	Soldier() {
 		Defaults();
 	}
  
-	Player(int posX, int posY) {
+	Soldier(int posX, int posY) {
 		Defaults();
 		xPosition = posX;
 		yPosition = posY;
 	}
 
-	Player(int posX, int posY, int health) {
+	Soldier(int posX, int posY, int health) {
 		Defaults();
 		xPosition = posX;
 		yPosition = posY;

@@ -21,6 +21,8 @@ public class NoteWar implements Game {
 		units[i] = new Soldier();
 	}
     units[233].setPosition(3,5);
+    GameBoard levelOne = new GameBoard();
+    
   }
 
   @Override

@@ -6,38 +6,40 @@
  * Meant to be easily contained in LL or array etc 	
  * 
  */
-public class GamePiece {
+package com.huntergdavis.NoteWar.core;
+ 
+class GamePiece {
 	
 	// gamePiece position defaults to 0,0 
-	private int xPosition;
-	private int yPosition;
+	protected int xPosition;
+	protected int yPosition;
 	
 	// gamePiece health defaults to 100
-	private int healthTotal;
-	private int healthCurrent;
+	protected int healthTotal;
+	protected int healthCurrent;
 	
 	// current animation frame
 	// animation frames are 1-indexed
 	// because artists are not programmers
-	private int currentAnimationFrame;
-	private int totalNumberOfAnimationFrames;
+	protected int currentAnimationFrame;
+	protected int totalNumberOfAnimationFrames;
 	
 	// is it highlighted?
-	private int highlightedState;
+	protected int highlightedState;
 	
 	// what type of piece is this?
-	private int gamePieceType;
+	protected int gamePieceType;
 	
 	/*
 	 * GamePiece initialization
 	 * set everything to defaults
 	 * using defaults() function
 	 */
-	abstract GamePiece() {
+	GamePiece() {
 		Defaults();
 	}
 	
-	private Defaults() {
+	protected void Defaults() {
 		xPosition = 0;
 		yPosition = 0;
 		healthTotal = 100;
@@ -57,7 +59,7 @@ public class GamePiece {
 	  * an int is used rather than a boolean
 	  * so we may add more highlighted states later
 	  */
-	  public setHighlight(int highlighted) {
+	  public void setHighlight(int highlighted) {
 		  highlightedState = highlighted;
 	  }
 	 
@@ -65,7 +67,7 @@ public class GamePiece {
 	 /*
 	  * update position
 	  */
-	 public setPosition(int posX, int posY) {
+	 public void setPosition(int posX, int posY) {
 		xPosition = posX;
 		yPosition = posY;
 	 }
@@ -73,15 +75,15 @@ public class GamePiece {
 	 /*
 	  * update health
 	  */
-	 public setCurrentHealth(int currentHealth) {
+	 public void setCurrentHealth(int currentHealth) {
 		 healthCurrent = currentHealth;
 	 }
 	 
 	 /*
 	  * update health and total
 	  */
-	 public setCurrentAndMaxHealth(int currentHealth, int maxHealth) {
+	 public void setCurrentAndMaxHealth(int currentHealth, int maxHealth) {
 		 healthCurrent = currentHealth;
-		 healthTotal maxHealth;
+		 healthTotal = maxHealth;
 	 }
 }

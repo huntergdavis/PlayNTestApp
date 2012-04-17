@@ -6,6 +6,7 @@ import playn.core.Game;
 import playn.core.Image;
 import playn.core.ImageLayer;
 
+
 public class NoteWar implements Game {
   @Override
   public void init() {
@@ -13,6 +14,13 @@ public class NoteWar implements Game {
     Image bgImage = assets().getImage("images/bg.png");
     ImageLayer bgLayer = graphics().createImageLayer(bgImage);
     graphics().rootLayer().add(bgLayer);
+    
+    // create 1000 soliders
+    Soldier units[] = new Soldier[1000];
+    for(int i =0;i<1000;i++) {
+		units[i] = new Soldier();
+	}
+    units[233].setPosition(3,5);
   }
 
   @Override

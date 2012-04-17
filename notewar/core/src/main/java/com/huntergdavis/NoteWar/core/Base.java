@@ -6,7 +6,9 @@
  * Meant to be easily contained in LL or array etc 	
  * 
  */
-public class Base extends GamePiece{
+package com.huntergdavis.NoteWar.core;
+ 
+class Base extends GamePiece{
 	
 	/*
 	 * set the game piece type

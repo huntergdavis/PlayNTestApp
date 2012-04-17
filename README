@@ -1,2 +1,12 @@
 NoteWar is a music and RTS combo game
+It is based on the Google open source playN framework
+
+You can run it by 
+1. ant
+cd notewar
+ant run-java
+
+2.  maven
+cd notewar
+mvn test -Ptest-java
 

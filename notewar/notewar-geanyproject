@@ -1,0 +1,24 @@
+
+[indentation]
+indent_width=4
+indent_type=1
+indent_hard_tab_width=8
+detect_indent=false
+indent_mode=2
+
+[project]
+name=NoteWar
+base_path=/home/hunter/Workspace/NoteWar/notewar
+description=
+
+[long line marker]
+long_line_behaviour=1
+long_line_column=72
+
+[files]
+current_page=4
+FILE_NAME_0=645;Java;0;16;1;1;0;/home/hunter/Workspace/NoteWar/notewar/core/src/main/java/com/huntergdavis/NoteWar/core/NoteWar.java;0;4
+FILE_NAME_1=206;Java;0;16;1;1;0;/home/hunter/Workspace/NoteWar/notewar/core/src/main/java/com/huntergdavis/NoteWar/core/Soldier.java;0;4
+FILE_NAME_2=0;Java;0;16;1;1;0;/home/hunter/Workspace/NoteWar/notewar/core/src/main/java/com/huntergdavis/NoteWar/core/Base.java;0;4
+FILE_NAME_3=210;Java;0;16;1;1;0;/home/hunter/Workspace/NoteWar/notewar/core/src/main/java/com/huntergdavis/NoteWar/core/GamePiece.java;0;4
+FILE_NAME_4=882;Java;0;16;1;1;0;/home/hunter/Workspace/NoteWar/notewar/core/src/main/java/com/huntergdavis/NoteWar/core/GameBoard.java;0;4

@@ -2,12 +2,15 @@ TODO Items:
 
 
 1.  FPS counter for all platforms.
-2.  Offset tile background group by whatever options or toolbar border to make etc
+2.  Offset tile background group by whatever options or toolbar border
+    to make etc
 3.  Create a simple map tile generator to generate maps with the tileset
 4.  Create a map loader, to load in maps from simple txt file
-5.  Need to create some kind of event class with timings for music highlighting
+5.  Need to create some kind of event class with timings for music highl
+    ighting
 
 
 DONE Items:
-1.  game board Tile rendering is happening!  Does not auto-scale tiles, pulls from a scaled resource directory
+1.  game board Tile rendering is happening!  Does not auto-scale tiles, 
+     pulls from a scaled resource directory
 2.  game board abstraction, and makes random boards

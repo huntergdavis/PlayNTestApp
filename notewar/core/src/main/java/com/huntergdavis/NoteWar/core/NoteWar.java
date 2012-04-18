@@ -5,20 +5,31 @@ import static playn.core.PlayN.*;
 import playn.core.Game;
 import playn.core.Image;
 import playn.core.ImageLayer;
+import playn.core.GroupLayer;
 
 
-public class NoteWar implements Game {
+public class NoteWar implements Game {	
+	
   @Override
   public void init() {
-	  
+	 
+	// load in our user set window properties
+	WindowProperties gameWindowProperties = new WindowProperties(); 
+	
+	// set our root layer properties
+	graphics().setSize(gameWindowProperties.xSize,gameWindowProperties.ySize);
+	 
 	// load in background and root layer
-	loadBackground();
+	loadBackground(gameWindowProperties);
 
-	// load in textures
-	loadTextures();
-    
     // setup a new gameboard 
-    setupGameBoard();
+    GameBoard levelOne = setupGameBoard();
+    
+    // setup our tile engine
+    TileEngine tileEngine = new TileEngine();
+    
+    // load the tile textures and board
+    tileEngine.setupGameBoardTilesAndLayer(levelOne, gameWindowProperties);
     
     // load units
     loadUnits();
@@ -33,37 +44,44 @@ public class NoteWar implements Game {
   public void update(float delta) {
   }
 
+  /*
+   * required function
+   * returns the update rate
+   */
   @Override
   public int updateRate() {
     return 25;
   }
   
-  private void setupGameBoard() {
-    // set a new gameboard
-    GameBoard levelOne = new GameBoard();
-  }
+  // Private Functions
   
-  private void loadBackground() {
+  // graphics related functions
+  
+  /*
+   * creates a background image
+   * loads it into a background layer
+   * adds it to the root layer
+   */
+  private void loadBackground(WindowProperties windowProperties) {
     // create and add background image layer
     Image bgImage = assets().getImage("images/bg.png");
     ImageLayer bgLayer = graphics().createImageLayer(bgImage);
     graphics().rootLayer().add(bgLayer);
   }
   
-  private void loadTextures() {
-	// load in the tiles for the gameboard
-    Image tileImages[] = new Image[5];
-    loadTileTextures(tileImages);
+  // game related functions
+  
+  /*
+   * setup a random game board
+   */
+  private GameBoard setupGameBoard() {
+    // set a new gameboard
+    return new GameBoard(40);
   }
   
-  private void loadTileTextures(Image tileContainer[]) {
-	tileContainer[0] = assets().getImage("tiles_4096/bush.png");
-	tileContainer[1] = assets().getImage("tiles_4096/desert.png");
-	tileContainer[2] = assets().getImage("tiles_4096/grass.png");
-	tileContainer[3] = assets().getImage("tiles_4096/ocean.png");
-	tileContainer[4] = assets().getImage("tiles_4096/mountain.png");
-  }
-  
+  /*
+   * load in some units
+   */
   private void loadUnits() {
     // create 1000 soliders
     Soldier units[] = new Soldier[1000];

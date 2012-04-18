@@ -13,13 +13,13 @@ import java.util.Random;
 class GameBoard{
 	
 	// array of integers to hold our game board
-	// game board defaults to 200x100 size for now
+	// game board defaults to 40x20 size for now
 	// we assume for now there are 4 main terrain types
 	protected int[][] boardArray;
 	
 	// our dimensions
-	protected int xSize = 200;
-	protected int ySize = 100;
+	public int xSize;
+	public int ySize;
 	
 	
 	// default constructor
@@ -27,12 +27,18 @@ class GameBoard{
 		Defaults();
 	}
 	
+	// random obstactles constructor
+	GameBoard(int numberOfRandomObstacles) {
+		Defaults();
+		placeXRandomObstacles(numberOfRandomObstacles);
+	}
+	
 	/*
 	 * Set the default game board options
 	 */
 	protected void Defaults() {
-		xSize = 200;
-		ySize = 100;
+		xSize = 20;
+		ySize = 10;
 		boardArray = new int[xSize][ySize];
 	};
 	

@@ -10,3 +10,5 @@ ant run-java
 cd notewar
 mvn test -Ptest-java
 
+Check out the TODO file for things left to do
+

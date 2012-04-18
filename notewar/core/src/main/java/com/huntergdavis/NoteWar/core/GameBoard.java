@@ -21,6 +21,8 @@ class GameBoard{
 	protected int xSize = 200;
 	protected int ySize = 100;
 	
+	
+	// default constructor
 	GameBoard() {
 		Defaults();
 	}

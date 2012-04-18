@@ -27,6 +27,9 @@ class GamePiece {
 	// is it highlighted?
 	protected int highlightedState;
 	
+	// is it fighting?
+	protected int fightState;
+	
 	// what type of piece is this?
 	protected int gamePieceType;
 	
@@ -47,6 +50,7 @@ class GamePiece {
 		currentAnimationFrame = 1;
 		totalNumberOfAnimationFrames = 1;
 		highlightedState = 0;
+		fightState = 0;
 	}
 	
 	/*
@@ -62,6 +66,15 @@ class GamePiece {
 	  public void setHighlight(int highlighted) {
 		  highlightedState = highlighted;
 	  }
+	  
+	  /*
+	   * 
+	   * Set whether the unit is fighting
+	   * handy for animation change
+	   */
+	   public void setFighting(int fighting) {
+		fightState = fighting;
+	   }
 	 
 	 
 	 /*

@@ -8,6 +8,12 @@ TODO Items:
 4.  Create a map loader, to load in maps from simple txt file
 5.  Need to create some kind of event class with timings for music highl
     ighting
+6.  figure out keyboard and mouse input handling (kbd for debug)!
+7.  should only need to use a single mouse button!
+8.  Need a sound effects engine
+9.  Need a background music engine
+10.  Sync background music to sound effects?
+11.  music touch mechanic.
 
 
 DONE Items:

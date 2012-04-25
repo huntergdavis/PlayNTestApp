@@ -16,9 +16,13 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=4
-FILE_NAME_0=645;Java;0;16;1;1;0;/home/hunter/Workspace/NoteWar/notewar/core/src/main/java/com/huntergdavis/NoteWar/core/NoteWar.java;0;4
-FILE_NAME_1=206;Java;0;16;1;1;0;/home/hunter/Workspace/NoteWar/notewar/core/src/main/java/com/huntergdavis/NoteWar/core/Soldier.java;0;4
-FILE_NAME_2=0;Java;0;16;1;1;0;/home/hunter/Workspace/NoteWar/notewar/core/src/main/java/com/huntergdavis/NoteWar/core/Base.java;0;4
-FILE_NAME_3=210;Java;0;16;1;1;0;/home/hunter/Workspace/NoteWar/notewar/core/src/main/java/com/huntergdavis/NoteWar/core/GamePiece.java;0;4
-FILE_NAME_4=882;Java;0;16;1;1;0;/home/hunter/Workspace/NoteWar/notewar/core/src/main/java/com/huntergdavis/NoteWar/core/GameBoard.java;0;4
+current_page=8
+FILE_NAME_0=1265;Java;0;16;1;1;0;/home/hunter/Workspace/NoteWar/notewar/core/src/main/java/com/huntergdavis/NoteWar/core/NoteWar.java;0;4
+FILE_NAME_1=694;Java;0;16;1;1;0;/home/hunter/Workspace/NoteWar/notewar/core/src/main/java/com/huntergdavis/NoteWar/core/GameBoard.java;0;4
+FILE_NAME_2=206;Java;0;16;1;1;0;/home/hunter/Workspace/NoteWar/notewar/core/src/main/java/com/huntergdavis/NoteWar/core/Soldier.java;0;4
+FILE_NAME_3=0;Java;0;16;1;1;0;/home/hunter/Workspace/NoteWar/notewar/core/src/main/java/com/huntergdavis/NoteWar/core/Base.java;0;4
+FILE_NAME_4=1634;Java;0;16;1;1;0;/home/hunter/Workspace/NoteWar/notewar/core/src/main/java/com/huntergdavis/NoteWar/core/GamePiece.java;0;4
+FILE_NAME_5=100;Java;0;16;1;1;0;/home/hunter/Workspace/NoteWar/notewar/core/src/main/java/com/huntergdavis/NoteWar/core/WindowProperties.java;0;4
+FILE_NAME_6=1419;Java;0;16;1;1;0;/home/hunter/Workspace/NoteWar/notewar/core/src/main/java/com/huntergdavis/NoteWar/core/tileEngine.java;0;4
+FILE_NAME_7=0;None;0;16;1;1;0;/home/hunter/Workspace/NoteWar/README;0;4
+FILE_NAME_8=290;None;0;16;1;1;0;/home/hunter/Workspace/NoteWar/TODO;0;4

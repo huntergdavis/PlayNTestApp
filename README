@@ -1,4 +1,5 @@
-NoteWar is a music and RTS combo game
+PlayN Test App is a test app for google play.
+Current it simple renders some tiles in a grid.
 It is based on the Google open source playN framework
 
 You can run it by 
